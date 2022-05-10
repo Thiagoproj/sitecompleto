@@ -1,0 +1,9 @@
+@charset "UTF=8";
+body{
+background-color: rgb(5, 247, 219);
+}
+ul li{
+    text-decoration: none;
+    color: rgb(26, 8, 225);
+    font-weight:bold;
+}
