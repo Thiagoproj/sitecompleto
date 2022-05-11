@@ -1,9 +1,9 @@
 @charset "UTF=8";
 body{
-background-color: blueviolet;
+background-color: rgb(3, 130, 241);
 }
 ul li{
     text-decoration: none;
-    color: rgb(26, 8, 225);
+    color: rgb(18, 4, 176);
     font-weight:bold;
 }
