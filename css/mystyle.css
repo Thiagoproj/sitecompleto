@@ -1,9 +1,5 @@
 @charset "UTF=8";
 
-
-
-    
-
 html{
     scroll-behavior: smooth;
 }
@@ -29,9 +25,7 @@ div{
     margin-left: auto;
     font-family: 'Old Standard TT', serif;
 }
-.menu-opcoes{
-    text-align: center;
-}
+
 
 
 h1{
@@ -42,11 +36,8 @@ h2{
     font-size: 1.5em;
 }
 
-.titulos {
-    text-align: center;
-    font-weight: bolder;
-    line-height: 3;
-}
+
+
 p{
     text-align: justify;
     margin-top: 2%;
@@ -63,20 +54,6 @@ ul li, ol li{
 
 figure{
     text-align: center;
-}
-
-.imgtex{
-    border: 5px solid rgb(160, 1, 160);
-    width: 50%;
-}
-
-.container{
-    margin-top: 25%;
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
-
 }
 
 @media screen and (max-width: 599px){
@@ -96,6 +73,7 @@ figure{
     header{
         flex-direction: row;
         position: relative;
+        height: 100px;
     }  
     .menu-opcoes{
         position: absolute;
@@ -106,6 +84,39 @@ figure{
         display: inline;
         margin-right:10px;
     }
+
+    .imglogo{
+        position: absolute;
+        top: 20px;
+    }
+}
+
+.menu-opcoes{
+    text-align: center;
+}
+
+.titulos {
+    text-align: center;
+    font-weight: bolder;
+    line-height: 3;
+}
+
+.imgtex{
+    border: 5px solid rgb(160, 1, 160);
+    width: 90%;
+}
+
+.centro{
+    text-align: center;
+}
+
+.container{
+    margin-top: 25%;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    
 }
 
 
@@ -127,6 +138,26 @@ figure{
     font-size: 1%;
 }
 
+.fundo{
+
+    background: #fff;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3%;
+    font-size: 1.2em;
+    
+    
+}
+.distancia{
+    margin-top: 2%;
+    max-width: 2%;
+    margin-right: 90%;
+}
+
+
+
+
 .ajustes{
 
     line-height: 1;
@@ -134,6 +165,7 @@ figure{
 }
 
 .ajustes li:hover{
+    
     background-color: #708090;
     color:blue;
 }
