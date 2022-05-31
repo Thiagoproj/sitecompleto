@@ -146,6 +146,8 @@ figure{
     margin-right: auto;
     padding: 3%;
     font-size: 1.2em;
+    border-radius: 10px;
+ 
     
     
 }
@@ -165,7 +167,7 @@ figure{
 }
 
 .ajustes li:hover{
-    
+
     background-color: #708090;
     color:blue;
 }
