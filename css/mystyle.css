@@ -56,6 +56,8 @@ figure{
     text-align: center;
 }
 
+
+
 @media screen and (max-width: 599px){
     .container{
                margin-top: 65%;
@@ -111,7 +113,7 @@ figure{
 }
 
 .container{
-    margin-top: 25%;
+    margin-top: 10%;
     width: 80%;
     margin-right: auto;
     margin-left: auto;
@@ -151,11 +153,7 @@ figure{
     
     
 }
-.distancia{
-    margin-top: 2%;
-    max-width: 2%;
-    margin-right: 90%;
-}
+
 
 
 
@@ -171,6 +169,33 @@ figure{
     background-color: #708090;
     color:blue;
 }
+
+.distancia{
+    margin-top: 2%;
+    margin-bottom: 2%; 
+}
+.diminui{
+    font-size: 17px;
+}
+
+input[type=text],select,textarea,input[type=submit]{
+    width:80%;
+    padding: 3px 20px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 
 a{
     color: rgb(203, 203, 209);

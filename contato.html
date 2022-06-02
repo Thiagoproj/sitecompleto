@@ -28,13 +28,10 @@
                <div class="fundo">
                   <form >
                       <div class="distancia">
-                           <label >Nome: </label>
-                           <input type="text">
-                      
+                           <input type="text" placeholder="Nome">
                       </div>
                       <div class="distancia">
-                              <label >Sobrenome: </label>
-                              <input type="text">
+                              <input type="text" placeholder="Sobrenome">
                       </div>
                       
                       
@@ -42,44 +39,42 @@
                          <h2>Sexo</h2>
 
                          <input type="radio" id="male" name="gender" value="male">
-                         <label for="male">Feminino</label><br>
+                         <label for="male" class="diminui">Masculino</label><br>
 
                          <input type="radio" id="female" name="gender" value="famele">
-                         <label for="female">Masculino</label><br>
+                         <label for="female" class="diminui">Feminino</label><br>
                       </div>
                       <div class="distancia">
-                        <h2 >Gosto Musical</h2>
-                        <input type="checkbox" id="male" name="gender" value="male">
-                        <label for="male">Rock</label><br>
+                        <h2 >Onde encontrou o erro</h2>
+                        <input type="checkbox" id="html" name="gender" value="html">
+                        <label for="html" class="diminui">HTML</label><br>
 
-                        <input type="checkbox" id="female" name="gender" value="famele">
-                        <label for="female">MPB</label><br>
-
-                        <input type="checkbox" id="male" name="gender" value="male">
-                        <label for="male">Sertanejo</label><br>
-
-                        <input type="checkbox" id="male" name="gender" value="male">
-                        <label for="male">Funk</label><br>
+                        <input type="checkbox" id="css" name="gender" value="css">
+                        <label for="css" class="diminui">CSS</label><br>
                       </div>
                        <div class="distancia">
                         <h2 >Escolaridade  </h2>
-                              <select id="cars" name="cars">
-                                 <option value="volvo">Fundamental</option>
+                              <select id="esco" name="esco">
+                                 <option value="Fundamental" class="diminui">Fundamental</option>
 
-                                 <option value="saab">Ensino Médio</option>
+                                 <option value="Ensino medio" class="diminui">Ensino Médio</option>
 
-                                 <option value="fiat">Superior</option>
+                                 <option value="superior" class="diminui">Superior</option>
 
-                                 <option value="audi">Especialização</option>
+                                 <option value="Especialização" class="diminui">Especialização</option>
                               </select>
                       </div>
-                      <div class="distancia">
+                      <div >
                           <h2>Sugestão ou Dúvida: </h2>
-                          <textarea name="message" style="width:200px; height:300px;"></textarea>
+                          <textarea name="message" placeholder="Digite sua sugestão" style="width:80%; height:200px;"></textarea>
+                      </div>
+                      <div class="distancia">
+                        Que nota você daria para esse site entre ( 1 e 10)<input type="number" name="quantidade" min="1" max="10">
                       </div>
                       <div class="distancia">
                            <input type="submit" value="Enviar">
                       </div>
+                     
                   </form>
                </div>
          </div>
