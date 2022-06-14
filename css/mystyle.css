@@ -181,7 +181,7 @@ fieldset{
     display: block;
 }
 
-fieldset.grupo .Campo {
+fieldset.grupo, .Campo {
       float: left;
       margin-right: 1em;
 }
@@ -192,7 +192,9 @@ fieldset.grupo .Campo {
     display: block;
 }
 
-.Campo select option{
+
+
+.Campo select option, .Campo input[type="radio"]{
     padding-right: 1em;
 }
    
