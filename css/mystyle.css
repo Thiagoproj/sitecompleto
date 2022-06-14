@@ -91,6 +91,11 @@ figure{
         position: absolute;
         top: 20px;
     }
+
+    #sobre{
+        flex-direction: row;
+        display:inline;
+    }
 }
 
 .menu-opcoes{
@@ -122,6 +127,13 @@ figure{
     margin-left: auto;
     position: relative;
     
+}
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
 }
 
 
@@ -233,6 +245,7 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
   }
+
 
 a{
     color: rgb(203, 203, 209);
