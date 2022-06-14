@@ -7,7 +7,7 @@ body{
     background-color: rgb(77, 137, 248);
     text-align: justify;
     
-}
+}           
 
 header,footer{
     background-color: rgba(0, 0, 255, 0.443);
@@ -102,6 +102,9 @@ figure{
     font-weight: bolder;
     line-height: 3;
 }
+.sobretitulo{
+    font-size:1.2em;
+}
 
 .imgtex{
     border: 5px solid rgb(160, 1, 160);
@@ -148,12 +151,13 @@ figure{
     margin-right: auto;
     padding: 3%;
     font-size: 1.2em;
-    border-radius: 10px;
- 
-    
-    
+    border-radius: 10px;   
 }
 
+fieldset{
+    border-radius: 5px;
+    background-color: rgb(130, 172, 250);
+}
 
 
 
@@ -169,15 +173,46 @@ figure{
     background-color: #708090;
     color:blue;
 }
-
-.distancia{
-    margin-top: 2%;
-    margin-bottom: 2%; 
+.Campo{
+    margin-bottom: 1em;
 }
-.diminui{
-    font-size: 17px;
+.Campo label{
+    margin-bottom: 0.2em;
+    display: block;
 }
 
+fieldset.grupo .Campo {
+      float: left;
+      margin-right: 1em;
+}
+
+.Campo input[type="text"], .Campo input[type="email"], .Campo select, .Campo textarea{
+    padding: 0.2;
+    border: 1px solid rgb(5, 216, 5);
+    display: block;
+}
+
+.Campo select option{
+    padding-right: 1em;
+}
+   
+.Campo input:focus, .campo select:focus,.campo textarea:focus{
+    background-color: #ebebf3;
+}
+
+.botao{
+    font-size: 1.2em;
+    background: #2a9503;
+    border: 0;
+    margin-bottom: 1em;
+    padding: 0.2em 0.6em ;
+    top: 90%;
+    left: 50%;
+    margin-right: -50% ;
+}
+.check{
+    display: inline-block;
+}
 input[type=text],select,textarea,input[type=submit]{
     width:80%;
     padding: 3px 20px;

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/rest.css">
     <link rel="stylesheet" href="css/mystyle.css">
-    <title>Contato</title>
+    <title>Formulario</title>
 </head>
 <body> 
     <header class="fixo">
@@ -22,62 +22,52 @@
       </nav>
     </header>
          <div class="container">   
-            <h1 class="titulos">Formulario de contato</h1>
-               
-               <p class="centro">Entre em contato conosco para falar de suas duvidas ou sugestões</p>
-               <div class="fundo">
-                  <form >
-                      <div class="distancia">
-                           <input type="text" placeholder="Nome">
-                      </div>
-                      <div class="distancia">
-                              <input type="text" placeholder="Sobrenome">
-                      </div>
-                      
-                      
-                      <div class="distancia">
-                         <h2>Sexo</h2>
-
-                         <input type="radio" id="male" name="gender" value="male">
-                         <label for="male" class="diminui">Masculino</label><br>
-
-                         <input type="radio" id="female" name="gender" value="famele">
-                         <label for="female" class="diminui">Feminino</label><br>
-                      </div>
-                      <div class="distancia">
-                        <h2 >Onde encontrou o erro</h2>
-                        <input type="checkbox" id="html" name="gender" value="html">
-                        <label for="html" class="diminui">HTML</label><br>
-
-                        <input type="checkbox" id="css" name="gender" value="css">
-                        <label for="css" class="diminui">CSS</label><br>
-                      </div>
-                       <div class="distancia">
-                        <h2 >Escolaridade  </h2>
-                              <select id="esco" name="esco">
-                                 <option value="Fundamental" class="diminui">Fundamental</option>
-
-                                 <option value="Ensino medio" class="diminui">Ensino Médio</option>
-
-                                 <option value="superior" class="diminui">Superior</option>
-
-                                 <option value="Especialização" class="diminui">Especialização</option>
-                              </select>
-                      </div>
-                      <div >
-                          <h2>Sugestão ou Dúvida: </h2>
-                          <textarea name="message" placeholder="Digite sua sugestão" style="width:80%; height:200px;"></textarea>
-                      </div>
-                      <div class="distancia">
-                        Que nota você daria para esse site entre ( 1 e 10)<input type="number" name="quantidade" min="1" max="10">
-                      </div>
-                      <div class="distancia">
-                           <input type="submit" value="Enviar">
-                      </div>
-                     
-                  </form>
-               </div>
-         </div>
+             <h1 class="titulos">Formulario de contato</h1>
+             <p>Entre em contato conosco para falar de suas duvidas ou sugestões</p>
+              <form >
+                  <fieldset clas="grupo">
+                     <div class="Campo">
+                       <label for="nome" >Nome</label>
+                       <input type="text" name="nome" id="nome" required>
+                    </div>
+                    <div class="Campo">
+                      <label for="sobrenome">Sobrenome</label>
+                      <input type="text" name="sobrenome" id="sobrenome" required>
+                    </div>
+                     <div class="Campo">
+                        <label >Oque você acha que precisa que arrume</label>
+                         <label >
+                            <input type="radio" name="dev" volue="Html">Html
+                            <input type="radio" name="dev" volue="Css">css
+                            <input type="radio" name="dev" volue="Java">JavaScript
+                         </label>
+                     </div>
+                     <div class="Campo">
+                        <label >Qual teve mais problemas</label>
+                        <select id="problemas">
+                            <option >HTML</option>
+                            <option >javascript</option>
+                            <option >Formulario</option>
+                        </select>
+                     </div>
+                  </fieldset>
+                  <fieldset clas="grupo">
+                     <div class="Campo">
+                        <label >Qual teve menos problemas</label>
+                        <input type="radio" id="menos1" nome="menos1" volue="Html">
+                        <label >Html</label>
+                        <input type="radio" id="menos2" nome="menos2" volue="JavaScript">
+                        <label >JavaScript</label>
+                        <input type="radio" id="menos3" nome="menos3" volue="Html">
+                        <label >Formulario</label>
+                     </div>
+                     <div class="Campo">
+                        <textarea name="area" id="area" cols="30" rows="10">Qualfoi sua experiencia </textarea>
+                     </div>
+                  </fieldset>
+                   <button class="botao">Enviar</button>
+              </form> 
+         </div>  
          <footer>
             <p>Rodapé</p>
          </footer>
