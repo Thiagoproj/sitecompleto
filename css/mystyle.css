@@ -26,8 +26,6 @@ div{
     font-family: 'Old Standard TT', serif;
 }
 
-
-
 h1{
 font-size: 1.7em;
 }
@@ -35,8 +33,6 @@ font-size: 1.7em;
 h2{
     font-size: 1.5em;
 }
-
-
 
 p{
     text-align: justify;
@@ -54,47 +50,6 @@ ul li, ol li{
 
 figure{
     text-align: center;
-}
-
-
-
-@media screen and (max-width: 599px){
-    .container{
-               margin-top: 65%;
-    }
-}
-@media screen and (min-width: 600px){
-   .container{
-       margin-top: 40%;
-   }
-}
-
-@media  screen and (min-width: 768px  ) {
-    .container{
-        margin-top: 20%;} 
-    header{
-        flex-direction: row;
-        position: relative;
-        height: 100px;
-    }  
-    .menu-opcoes{
-        position: absolute;
-        right: 5%;
-        top: 45%;
-    }
-    .menu-opcoes ul li{
-        display: inline;
-        margin-right:10px;
-    }
-
-    .imglogo{
-        position: absolute;
-        top: 20px;
-    }
-
-    #sobre{
-        flex-direction: row;
-    }
 }
 
 .menu-opcoes{
@@ -127,12 +82,16 @@ figure{
     position: relative;
     
 }
+.imgsobre{
+    width: 50%;
+    right: 50%;
+}
 #sobre{
+    text-align: center;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; 
     position: relative;
-    margin: 0 auto;
+    margin:auto;
 }
 
 
@@ -203,8 +162,6 @@ fieldset.grupo, .Campo {
     display: block;
 }
 
-
-
 .Campo select option, .Campo input[type="radio"]{
     padding-right: 1em;
 }
@@ -273,4 +230,69 @@ td,th{
 }
 tr:nth-child(even) {
    background-color: rgba(3, 3, 191, 0.484);
+}
+
+.lista{
+  position: relative;
+  margin: 10px 0px;
+ 
+}
+.lista::before{
+    content:'';
+    position:relative;
+    left: 0; 
+    top: 0;
+    padding: 10px 15px;
+    background-image: url(../img/lista.png);
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 599px){
+    .container{
+               margin-top: 65%;
+    }
+}
+@media screen and (min-width: 600px){
+   .container{
+       margin-top: 40%;
+   }
+}
+
+@media  screen and (min-width: 768px  ) {
+    .container{
+        margin-top: 20%;} 
+    header{
+        flex-direction: row;
+        position: relative;
+        height: 100px;
+    }  
+    .menu-opcoes{
+        position: absolute;
+        right: 5%;
+        top: 45%;
+    }
+    .menu-opcoes ul li{
+        display: inline;
+        margin-right:10px;
+    }
+
+    .imglogo{
+        position: absolute;
+        top: 20px;
+    }
+
+    #sobre{
+        flex-direction: row;
+        position: relative;
+    }
+    #sobre h1, h2 ,h3 , p{
+        width: 100%;
+        text-align: center;
+    }
+
+    #sobre, .sobre{
+        width: 50%;
+        text-align: center;
+    }
 }
