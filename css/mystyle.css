@@ -1,4 +1,4 @@
-@charset "UTF=8";
+@charset "UTF-8";
 
 html{
     scroll-behavior: smooth;
@@ -94,7 +94,6 @@ figure{
 
     #sobre{
         flex-direction: row;
-        display:inline;
     }
 }
 
