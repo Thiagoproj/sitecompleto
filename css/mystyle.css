@@ -83,17 +83,37 @@ figure{
     
 }
 .imgsobre{
-    width: 50%;
-    right: 50%;
+    width: 70%;
+    right: 70%;
+}
+.imggaleria{
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 10px 10px #024a92c2;
+}
+#sobre h1, h3 , p{
+    width: 100%;
+    text-align: center;
 }
 #sobre{
     text-align: center;
     display: flex;
     flex-direction: column; 
     position: relative;
-    margin:auto;
+    margin: 0 auto;
 }
 
+#galeria{
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    position: relative;
+    margin: 2px 2px;  
+}
+#galeria .galeria{
+    margin: 2px 2px; 
+    align-items: center;
+}
 
 .fixo{
     position: fixed;
@@ -282,17 +302,23 @@ tr:nth-child(even) {
         top: 20px;
     }
 
-    #sobre{
+    #sobre, #galeria{
+        text-align: center;
         flex-direction: row;
-        position: relative;
+        
     }
-    #sobre h1, h2 ,h3 , p{
+    #galeria{
+        text-align: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #sobre h1, h3 , p{
         width: 100%;
         text-align: center;
     }
 
-    #sobre, .sobre{
-        width: 50%;
+    #sobre, .sobre, #galeria .galeria{
+        width: 45%;
         text-align: center;
     }
 }
